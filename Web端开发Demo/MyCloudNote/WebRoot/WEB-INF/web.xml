@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>MyCloudNote</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+ 
+  
+  <!-- 登陆____________LoginServlet -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.cloudnotes.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login.do</url-pattern>
+    </servlet-mapping>
+    
+    
+     <!-- 注册____________RegisterServlet -->
+      <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.cloudnotes.servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register.do</url-pattern>
+    </servlet-mapping>
+    
+     <!-- 添加笔记____________InsertNotesServlet -->
+     <servlet>
+        <servlet-name>InsertNotesServlet</servlet-name>
+        <servlet-class>com.cloudnotes.servlet.InsertNotesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertNotesServlet</servlet-name>
+        <url-pattern>/insertNotes.do</url-pattern>
+    </servlet-mapping>
+    
+    
+     <!-- 删除笔记____________DeleteNotesServlet -->
+     <servlet>
+        <servlet-name>DeleteNotesServlet</servlet-name>
+        <servlet-class>com.cloudnotes.servlet.DeleteNotesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteNotesServlet</servlet-name>
+        <url-pattern>/deleteNotes.do</url-pattern>
+    </servlet-mapping>
+    
+    
+     <!-- 修改笔记____________UpdateNotesServlet -->
+     <servlet>
+        <servlet-name>UpdateNotesServlet</servlet-name>
+        <servlet-class>com.cloudnotes.servlet.UpdateNotesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateNotesServlet</servlet-name>
+        <url-pattern>/updateNotes.do</url-pattern>
+    </servlet-mapping>
+    
+    
+     <!-- 查询笔记____________FindNotesServlet -->
+     <servlet>
+        <servlet-name>FindNotesServlet</servlet-name>
+        <servlet-class>com.cloudnotes.servlet.FindNotesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindNotesServlet</servlet-name>
+        <url-pattern>/findNotes.do</url-pattern>
+    </servlet-mapping>
+    
+    <!-- 搜索笔记____________SearchNotesServlet -->
+     <servlet>
+        <servlet-name>SearchNotesServlet</servlet-name>
+        <servlet-class>com.cloudnotes.servlet.SearchNotesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchNotesServlet</servlet-name>
+        <url-pattern>/searchNotes.do</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+     <!-- 收藏笔记____________CollectNotesServlet -->
+     <servlet>
+        <servlet-name>CollectNotesServlet</servlet-name>
+        <servlet-class>com.cloudnotes.servlet.CollectNotesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CollectNotesServlet</servlet-name>
+        <url-pattern>/collectNotes.do</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- 取消收藏笔记____________DeleteCollectedNotesServlet -->
+     <servlet>
+        <servlet-name>DeleteCollectedNotesServlet</servlet-name>
+        <servlet-class>com.cloudnotes.servlet.DeleteCollectedNotesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteCollectedNotesServlet</servlet-name>
+        <url-pattern>/deleteCollectedNotes.do</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- 查询收藏笔记____________FindCollectedNotesServlet -->
+     <servlet>
+        <servlet-name>FindCollectedNotesServlet</servlet-name>
+        <servlet-class>com.cloudnotes.servlet.FindCollectedNotesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindCollectedNotesServlet</servlet-name>
+        <url-pattern>/findCollectedNotes.do</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- 查询历史记录____________FindHistoryItemsServlet -->
+     <servlet>
+        <servlet-name>FindHistoryItemsServlet</servlet-name>
+        <servlet-class>com.cloudnotes.servlet.FindHistoryItemsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindHistoryItemsServlet</servlet-name>
+        <url-pattern>/findHistoryItems.do</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- 插入历史记录____________InsertHistoryItemsServlet -->
+     <servlet>
+        <servlet-name>InsertHistoryItemsServlet</servlet-name>
+        <servlet-class>com.cloudnotes.servlet.InsertHistoryItemsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertHistoryItemsServlet</servlet-name>
+        <url-pattern>/insertHistoryItems.do</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    <!-- 删除历史记录____________DeleteHistoryItemsServlet -->
+     <servlet>
+        <servlet-name>DeleteHistoryItemsServlet</servlet-name>
+        <servlet-class>com.cloudnotes.servlet.DeleteHistoryItemsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteHistoryItemsServlet</servlet-name>
+        <url-pattern>/deleteHistoryItems.do</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    <!-- 删除所有历史记录____________DeleteAllHistoryItemsServlet -->
+     <servlet>
+        <servlet-name>DeleteAllHistoryItemsServlet</servlet-name>
+        <servlet-class>com.cloudnotes.servlet.DeleteAllHistoryItemsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteAllHistoryItemsServlet</servlet-name>
+        <url-pattern>/deleteAllHistoryItems.do</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- 搜索历史记录____________SearchHistoryItemsServlet -->
+     <servlet>
+        <servlet-name>SearchHistoryItemsServlet</servlet-name>
+        <servlet-class>com.cloudnotes.servlet.SearchHistoryItemsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchHistoryItemsServlet</servlet-name>
+        <url-pattern>/searchHistoryItems.do</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- 搜索历史记录____________UpdateHistoryItemsServlet -->
+     <servlet>
+        <servlet-name>UpdateHistoryItemsServlet</servlet-name>
+        <servlet-class>com.cloudnotes.servlet.UpdateHistoryItemsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateHistoryItemsServlet</servlet-name>
+        <url-pattern>/updateHistoryItems.do</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <!-- 获取到最后的插入笔记操作中的note_id____________GetLastInsertIdServlet -->
+     <servlet>
+        <servlet-name>GetLastInsertIdServlet</servlet-name>
+        <servlet-class>com.cloudnotes.servlet.GetLastInsertIdServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetLastInsertIdServlet</servlet-name>
+        <url-pattern>/getLastInsertId.do</url-pattern>
+    </servlet-mapping>
+
+</web-app>
